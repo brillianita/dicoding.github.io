@@ -1,0 +1,404 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #2f8f8c;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    width: 80%;
+}
+
+aside {
+    width: 20%;
+}
+
+a {
+    text-decoration: none;
+}
+/* navbar */
+
+nav {
+    background-color: #2f8f8c;
+    display: flex;
+    color: #ffffff;
+    align-items: center;
+    /* justify-content: space-around; */
+}
+
+.nav-left .logo-img img {
+    width: 45px;
+    padding: 20px 0;
+}
+
+.nav-left {
+    display: flex;
+    margin-left: 30px;
+}
+
+.nav-left h3 {
+    align-items: center;
+    padding-top: 30px;
+    padding-left: 10px;
+}
+
+.nav-right {
+    margin-left: auto;
+    margin-right: 30px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li a {
+    color: #ffffff;
+    padding: 20px;
+    font-size: 16px;
+}
+
+nav ul li a:hover{
+    font-weight: bold;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.menu-toggle input {
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    left: -6px;
+    top: -3px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: #ffffff;
+    margin-right: 30px;
+}
+
+/* Jumbotron */
+.jumbotron img {
+    width: 100%;
+    z-index: -1;
+    background-size: cover;
+}
+
+/* Section Why Us */
+.why-us {
+    padding: 20px;
+    position: relative;
+    background: #0f2220;
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.808);
+}
+
+.why-us h2 {
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 5px 5px 2px #0f2220;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.why-us-items {
+    display: flex;
+}
+
+.why-us-item {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.808);
+    border-radius: 10px;
+    transition: 0.3s;
+    width: 25%;
+    background: #2f8f8c;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.why-us-item .fa {
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.why-us-item h4 {
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.why-us .left-slide,.why-us .right-slide{
+    display: none;
+}
+
+/* About Us */
+.about-us {
+    margin-top: 80px;
+    width: 100%;
+}
+
+.about-us .container h2 {
+    text-align: center;
+    color: #0f2220;
+    text-shadow: 5px 5px 2px #87cac6;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.about-us-items article{
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 20px 35px;
+}
+
+.about-us-items img {
+    width: 550px;
+    flex-grow: 2;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.808);
+}
+
+.about-us-items p {
+    flex-grow: 1;
+    font-size: 20px;
+    margin-right: 30px;
+    color: #0f2220;
+    text-align: justify;
+    line-height: 1.5em;
+}
+
+/* Aside */
+aside {
+    width: 15%;
+    float: right;
+    text-align: center;
+    background: #0f2220;
+    color: #ffffff;
+    padding: 20px;
+    position: relative;
+    background: #0f2220;
+    margin-top: 0;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.808);
+}
+
+aside img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.aside table tr{
+    text-align: unset;
+}
+
+.social-icon {
+    margin: 15px auto;
+}
+
+.social-icon a{
+    padding: 10px;
+}
+
+td p {
+    text-align: left;
+}
+/* Contact us */
+
+.contact-us {
+    width: 100%;
+}
+
+.contact-us-items {
+    background: #0f2220;
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.contact-us-items h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.contact-us-item .fa-user {
+    margin-bottom: 20px;
+}
+
+.contact-us-item h6{
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.contact-us-item p {
+    margin-bottom: 25px;
+}
+
+.contact-us-item .fa-phone, .fa-at {
+    margin-right: 5px;
+}
+
+/* Footer */
+footer {
+    background: #0f2220;
+    width: 100%;
+    height: 50px;
+}
+
+ .footer-text p{
+     border-top: 2px solid #2f8f8c;
+    color: #ffffff;
+    font-size: 15px;
+    margin: auto;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Responsive */
+
+/* Ukuran Tablet */
+@media screen and (max-width: 1000px) {
+    /* Why us */
+    .why-us {
+        width: 60%;
+    }
+    .why-us .left-slide,.why-us .right-slide {
+        position: absolute;
+        height: 40px;
+        width: 40px;
+        background-color: #444444;
+        border-radius: 50%;
+        color: #ffffff;
+        font-size: 20px;
+        top:60%;
+        cursor: pointer;
+        margin-top: -20px;
+        text-align: center;
+        line-height: 40px;
+        display: unset;
+    }
+    .why-us .left-slide:hover,.why-us .right-slide:hover {
+        box-shadow: 0px 0px 10px black;
+        background-color: #34b9ac;
+    }
+      
+    .why-us .left-slide {
+        left: 30px;
+    }
+    .why-us .right-slide {
+          right: 30px;
+    }
+    
+    .why-us .why-us-items .why-us-item {
+        display: none;
+        position: relative;
+    }
+    
+    
+    .why-us .why-us-items .why-us-item.active {
+        display: block;
+    }
+
+    .why-us-item {
+        width: 100%;
+    }
+
+    .why-us-item.slide {
+        transform: translateX(0);
+        z-index: 0;
+    }
+
+    /* About Us */
+    .about-us-items article{
+        display: block;
+        text-align: center;
+    }
+
+    .about-us-items img {
+        margin-bottom: 30px;
+    }
+
+    .about-us-items p {
+        margin-right: unset;
+    }
+
+    /* Aside */
+    aside {
+        width: 30%;
+    }
+}
+
+
+
+/* Ukuran mobile */
+@media screen and (max-width : 670px) {
+    h2 {
+        font-size: 25px;
+    }
+    /* Navbar */
+    nav ul {
+        position: absolute;
+        top: 0;
+        right: 0;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 50vh;
+        width: 100%;
+        z-index: 1;
+        background-color: #2f8f8c;
+        transform: translateY(0);
+        transition: all 1s;
+    } 
+
+    nav ul.slide {
+        transform: translateY(-100%);
+        z-index: 0;
+    }
+
+    .menu-toggle {
+        display: flex;
+        z-index: 2;
+    }
+
+    /* Why Us */
+    .why-us {
+        width: 100%;
+    }
+
+    /* About us */
+
+    .about-us-items img {
+        width: 100%;
+    }
+
+    /* Identitas Diri */
+    aside {
+        display: none;
+    }
+}
+
